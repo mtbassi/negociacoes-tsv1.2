@@ -35,9 +35,7 @@ export class NegociacaoController {
             && data.getDay() < DiasDaSemana.SABADO;
     }
     limparFormulario() {
-        this.inputData.value = '';
-        this.inputQuantidade.value = '';
-        this.inputValor.value = '';
+        document.querySelector('form').reset();
         this.inputData.focus();
     }
     atualizaView() {
